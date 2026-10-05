@@ -1,0 +1,450 @@
+/* UMUMIY */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b0d10;
+    color: #f2f4f7;
+}
+
+
+/* NAVBAR */
+
+nav {
+    background-color: #151922;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 30px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 20px 25px;
+    color: #f2f4f7;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: #7c5cff;
+    color: white;
+}
+
+/* =========================
+   HOME
+========================= */
+
+.hero {
+    min-height: 600px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 30px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.hero-content {
+    max-width: 750px;
+}
+
+
+.hero-label,
+.section-label {
+    color: #7c5cff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    margin: 0;
+    font-size: 76px;
+    line-height: 1.05;
+    letter-spacing: -3px;
+}
+
+
+.hero h1 span {
+    color: #7c5cff;
+}
+
+
+.hero-description {
+    max-width: 600px;
+    margin: 30px 0;
+    color: #aeb4c0;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.primary-btn {
+    background-color: #7c5cff;
+    color: white;
+}
+
+
+.primary-btn:hover {
+    background-color: #6848e8;
+}
+
+
+.secondary-btn {
+    border: 1px solid #252a35;
+    color: #f2f4f7;
+}
+
+
+.secondary-btn:hover {
+    border-color: #7c5cff;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.home-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 30px;
+}
+
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 30px;
+}
+
+
+.section-header h2 {
+    margin: 0;
+    font-size: 32px;
+}
+
+
+.section-header a {
+    color: #7c5cff;
+    text-decoration: none;
+}
+
+
+/* =========================
+   NEWS CARDS
+========================= */
+
+.news-preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.home-news-card {
+    padding: 30px;
+
+    background-color: #151922;
+    border: 1px solid #252a35;
+    border-radius: 14px;
+
+    transition: 0.3s;
+}
+
+
+.home-news-card:hover {
+    transform: translateY(-5px);
+    border-color: #7c5cff;
+}
+
+
+.news-date {
+    color: #7c5cff;
+    font-size: 13px;
+}
+
+
+.home-news-card h3 {
+    margin: 15px 0;
+    font-size: 21px;
+}
+
+
+.home-news-card p {
+    color: #aeb4c0;
+    line-height: 1.6;
+}
+
+
+.home-news-card a {
+    display: inline-block;
+    margin-top: 15px;
+
+    color: #f2f4f7;
+    text-decoration: none;
+}
+
+
+/* =========================
+   GAMES
+========================= */
+
+.games-preview {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    background-color: #151922;
+    border: 1px solid #252a35;
+    border-radius: 18px;
+}
+
+
+.games-text {
+    max-width: 600px;
+}
+
+
+.games-preview h2 {
+    font-size: 36px;
+    margin: 10px 0 20px;
+}
+
+
+.games-preview p {
+    color: #aeb4c0;
+    line-height: 1.7;
+}
+
+
+.games-status {
+    min-width: 220px;
+    text-align: center;
+}
+
+
+.games-status span {
+    display: block;
+    color: #7c5cff;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+
+.games-status strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 28px;
+}
+
+
+/* =========================
+   ABOUT PREVIEW
+========================= */
+
+.about-preview {
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+
+.about-preview h2 {
+    font-size: 36px;
+    line-height: 1.3;
+}
+
+
+.about-preview p {
+    color: #aeb4c0;
+    line-height: 1.7;
+}
+
+
+.about-preview a {
+    color: #7c5cff;
+    text-decoration: none;
+}
+
+/* ABOUT HERO */
+
+.ceocard {
+    max-width: 1100px;
+    margin: 80px auto 60px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    background-color: #151922;
+    border-radius: 20px;
+}
+
+
+/* HERO TEXT */
+
+.ceocard-text {
+    max-width: 700px;
+}
+
+.ceocard-text h1 {
+    margin: 0 0 20px;
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.ceocard-text p {
+    margin: 0;
+    color: #b5bac5;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+
+/* CEO IMAGE */
+
+.ceocardimg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 4px solid #7c5cff;
+}
+
+
+/* CARDS SECTION */
+
+.about-cards {
+    max-width: 1100px;
+    margin: 0 auto 80px;
+
+    display: flex;
+    gap: 30px;
+}
+
+
+/* CARD */
+
+.card {
+    flex: 1;
+    padding: 35px;
+
+    background-color: #151922;
+    border: 1px solid #252a35;
+    border-radius: 16px;
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #f2f4f7;
+}
+
+.card p {
+    color: #aeb4c0;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+/* CARD HOVER */
+
+.card:hover {
+    border-color: #7c5cff;
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.footer {
+    margin-top: 80px;
+    padding: 40px 60px 20px;
+    background-color: #151922;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-about h2 {
+    margin-bottom: 10px;
+}
+
+.footer-about p {
+    color: #9ca3af;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h3 {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #f2f4f7;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #7c5cff;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #2a2f3a;
+    text-align: center;
+    color: #9ca3af;
+}
